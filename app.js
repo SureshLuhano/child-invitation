@@ -13,7 +13,7 @@ document.getElementById('submit-btn').addEventListener('click', async function (
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
     const dob = document.getElementById('dob').value;
-    const email = document.getElementById('email').value;
+    const email = document.getElementById('email').value = email;
     const password = document.getElementById('password').value;
     // const gender = document.querySelector('input[name="gender"]:checked').value;
     // const confirmPassword = document.getElementById('confirm-password').value;
