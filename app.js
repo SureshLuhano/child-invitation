@@ -1,3 +1,14 @@
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  }
+  
+  // Usage
+  var email = getUrlParameter('email');
+  console.log('Email:', email);
+
 document.getElementById('submit-btn').addEventListener('click', async function () {
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
