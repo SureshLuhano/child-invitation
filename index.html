@@ -134,6 +134,19 @@
             width: 75%;
             padding: 10px 0px;
         }
+        .gender-main{
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+        }
+        .gender-main>input{
+           margin: 20px 8px;
+        }
+        .gender-main>label{
+           color: #fff;
+           font-size: 12px;
+           margin: 20px 8px;
+        }
     </style>
 </head>
 
@@ -152,11 +165,24 @@ padding-top: 50px;">
                     <img src="./logo.png" style="width: 25%;" />
                     <h4 class="congratulation-contents-title">Register Your Account</h4>
                     <form class="form-main" id="registration-form">
-                        <input type="email" placeholder="Email" class="form-input" id="email" />
+                        <div class="d-flex w-75"> 
+                        <input type="text" placeholder="First name" class="form-input" id="firstName" />
+                        <input type="text" placeholder="Last name" class="form-input" id="lastName" style="margin-left: 10px;" />
+                    </div>
+                        <input type="date" placeholder="DOB" class="form-input" id="dob" />
+                        <input type="email" placeholder="Email" class="form-input" id="email" value="m.farooq.h7@gmail.com" readonly />
                         <input type="password" placeholder="Password" class="form-input" id="password" />
+                        <!-- Gender selection -->
+                        <!-- <div class="gender-main">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div> -->
                         <!-- <input type="password" placeholder="Confirm Password" class="form-input" id="confirm-password" /> -->
                         <input type="button" value="Submit" class="submit-btn" id="submit-btn">
                     </form>
+                    
 
                 </div>
             </div>
