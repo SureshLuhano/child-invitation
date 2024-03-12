@@ -28,7 +28,7 @@ document.getElementById('submit-btn').addEventListener('click', async function (
         password: password,
         // confirmPassword: confirmPassword
     };
-    // console.log("🚀 ~ bodyObj:", bodyObj)
+    console.log("🚀 ~ bodyObj:", bodyObj)
 
     // try {
     //     // Send the registration data to the backend using fetch API
